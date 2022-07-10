@@ -7,7 +7,7 @@ export default function CardBegin({ modifyIndex }: PropTypes) {
   return (
     <div className="card">
       <h1>🍣 Aide-nous à ravir tes papilles ! 🌶️</h1>
-      <button onClick={modifyIndex}>COMMENCER</button>
+      <button onClick={() => modifyIndex(1)}>COMMENCER</button>
     </div>
   );
 }

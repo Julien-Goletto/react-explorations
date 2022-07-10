@@ -25,7 +25,7 @@ export default function DietForm({ modifyIndex, updateFormData }: PropTypes) {
       <input onChange={handleRadio} type="radio" name="diet" id="vegetarian" value="vegetarian" />
       <label htmlFor="vegan">Vegan</label>
       <input onChange={handleRadio} type="radio" name="diet" id="vegan" value="vegan" />
-      <button onClick={modifyIndex}>Valider</button>
+      <button onClick={() => modifyIndex(1)}>Valider</button>
     </form>
   );
 }
